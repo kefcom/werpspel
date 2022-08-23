@@ -14,6 +14,7 @@ int ledSegementSpeed[10] = {500,500,500,500,500,500,500,500,500,500};
 int scoreValues[10] = {3,1,1,3,1,5,1,1,1,3};
 
 
+
 WS2812FX ws2812fx = WS2812FX(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 WS2812FX ws2812fx_score = WS2812FX(LED_COUNT_SCORE, LED_PIN_SCORE, NEO_GRB + NEO_KHZ800);
 
@@ -83,6 +84,8 @@ void setup() {
   ws2812fx_score.start();
 
   score = 0;
+
+  
 
 
 
